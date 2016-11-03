@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Counter = require('./components/counter');
+var TodoList = require('./components/TodoList.jsx');
 
-ReactDOM.render(<Counter phrase='I like tacos'/>, document.body);
+ReactDOM.render(<TodoList />, document.querySelector('#app'));
