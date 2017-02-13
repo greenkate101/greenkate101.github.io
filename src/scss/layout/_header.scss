@@ -1,0 +1,28 @@
+
+.logo-container {
+	width: 50%;
+	padding-right: 10px;
+}
+
+.logo {
+	height: 50px;
+}
+
+nav {
+	ul{
+		list-style-type: none;
+		overflow: hidden;
+
+		li {
+			float: left;
+
+			a {
+				display: block;
+				text-align: left;
+				padding: 10px;
+				text-decoration: none;
+				color: $deepgray;
+			}
+		}
+	}
+}

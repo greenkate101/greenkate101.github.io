@@ -1,0 +1,33 @@
+.gallery {
+	margin-top: 20px; 
+	margin-left: 28px;
+	.gallery-item {
+		margin: 20px;
+		.thumbnail {
+			border: 5px solid #FFF;
+			width: 400px;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.gallery div {
+		width: 100px;
+	}
+	.gallery {
+		margin-right: 28px;
+		@include flexbox;
+		@include flex-wrap(wrap);
+		@include justify-content;
+		@include flex-flow(flow);
+		@include align-content;
+	}
+	.cf {
+	width : 100px;
+	}
+}
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}

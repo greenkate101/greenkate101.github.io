@@ -1,6 +1,12 @@
 var React = require('react');
-
+// var ReactDOM = require('react-dom');
 var Link = require('react-router').Link;
+
+var Home = require('./Home.jsx');
+var About = require('./About.jsx');
+var Projects = require('./Projects.jsx');
+var Contact = require('./Contact.jsx');
+
 
 function getActiveClass (path) {
 	var current = window.location.hash.slice(1);
@@ -11,11 +17,8 @@ var App = React.createClass({
 	render: function() {
 		return (
 		<div>
-			<header>
-				<Link to="/" className={ getActiveClass('/')}>Home</Link>
-			</header>
+
 			<main>
-				<h1>App</h1>
 				{this.props.children}
 			</main>
 		</div>

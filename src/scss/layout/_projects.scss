@@ -1,0 +1,47 @@
+.sort {
+	margin-left: 25px;
+	font-family: $raleway;
+	.par {
+		margin-left: 25px;
+	}
+}
+.contain {
+	margin: 0px;
+	.mock {
+		width: 500px;
+		float: left;
+		height: 450px;
+		margin-left: 25px;
+	}
+}
+
+.sortie {
+	color: $charcoal;
+	margin-left: 25px;
+	font-family: $raleway;
+}
+.proj {
+	width: 500px;	
+	float: left;
+	margin-left: 25px;
+	}
+
+@media screen and (min-width: 768px) {
+	.proj {
+		width: 500px;
+		height: 300px;
+
+	}
+	.contain {
+		float: left;
+		margin-left: 50px;
+		.mock {
+			width: 700px;
+			height: 600px;
+		}
+	}
+	.proj {
+		width: 1500px;
+		height: 900px;
+	}
+}

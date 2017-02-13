@@ -4,10 +4,14 @@ var shortid = require('shortid');
 var bodyParser = require('body-parser');
 var express = require('express');
 
-var db = lowdb('db.json', {storage: fileAsync});
-
 var app = express();
 var port = 3000;
+
+var db = lowdb('db.json', { storage: fileAsync });
+
+db.defaults({
+
+}).value();
 
 app.use(bodyParser());
 app.use(express.static(__dirname + '/public'));
@@ -17,9 +21,7 @@ app.use(express.static(__dirname + '/lib'));
 
 //dirname
 
-db.defaults({
 
-}).value();
 
 app.listen(port);
 

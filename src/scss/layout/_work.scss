@@ -1,0 +1,31 @@
+
+#box img {
+	height: 400px;
+	width: 465px;
+	float: left;
+	margin-left: 50px;
+}
+#photo-cover {
+		margin: auto 0;
+	}
+
+@media screen and (min-width: 396px) {
+	#box {
+		margin-left: 20px;
+	}
+	#box img {
+		// width: 150px;
+		// height: 150px;
+		margin-left: 0px;
+		}
+}
+@media screen and (min-width: 950px) {
+	#box div { 
+		margin-left: 40px;
+	}
+	#box img {
+		width: 40%;
+		height: 480px;
+		margin: 33px;
+	}
+}
