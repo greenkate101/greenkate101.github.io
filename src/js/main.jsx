@@ -11,17 +11,27 @@ var hashHistory = ReactRouter.hashHistory;
 
 var App = require('./components/App.jsx');
 var Home = require('./components/Home.jsx');
-var About = require('./components/About.jsx');
+var Contact = require('./components/Contact.jsx');
+var Design = require('./components/Design.jsx');
+var Logo = require('./components/Logo.jsx');
+var Photography = require('./components/Photography.jsx');
+var Projects = require('./components/Projects.jsx');
+var Resume = require('./components/Resume.jsx');
+var Work = require('./components/Work.jsx');
+
 
 var jsx = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}/>
-			<Route path="/about" component={About}/>
+			// <Route path="/resume" component={Resume}/>
 			<Route path="/work" component={Work}/>
-			<Route path="/projects" component={Projects}/>
+				<Route path="/photography" component={Photography}/>
+				<Route path="/logo" component={Logo}/>
+				<Route path="/design" component={Design}/>
+				<Route path="/projects" component={Projects}/>
+			</Route>
 			<Route path="/contact" component={Contact}/>
-		</Route>
 	</Router>
 );
 

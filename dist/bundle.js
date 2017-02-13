@@ -57,7 +57,13 @@
 
 	var App = __webpack_require__(233);
 	var Home = __webpack_require__(234);
-	var About = __webpack_require__(235);
+	var Contact = __webpack_require__(235);
+	var Design = __webpack_require__(236);
+	var Logo = __webpack_require__(237);
+	var Photography = __webpack_require__(238);
+	var Projects = __webpack_require__(239);
+	var Resume = __webpack_require__(240);
+	var Work = __webpack_require__(241);
 
 	var jsx = React.createElement(
 		Router,
@@ -66,11 +72,15 @@
 			Route,
 			{ path: '/', component: App },
 			React.createElement(IndexRoute, { component: Home }),
-			React.createElement(Route, { path: '/about', component: About }),
+			'// ',
+			React.createElement(Route, { path: '/resume', component: Resume }),
 			React.createElement(Route, { path: '/work', component: Work }),
-			React.createElement(Route, { path: '/projects', component: Projects }),
-			React.createElement(Route, { path: '/contact', component: Contact })
-		)
+			React.createElement(Route, { path: '/photography', component: Photography }),
+			React.createElement(Route, { path: '/logo', component: Logo }),
+			React.createElement(Route, { path: '/design', component: Design }),
+			React.createElement(Route, { path: '/projects', component: Projects })
+		),
+		React.createElement(Route, { path: '/contact', component: Contact })
 	);
 
 	ReactDOM.render(jsx, document.querySelector('#app'));
@@ -26401,10 +26411,15 @@
 	// var ReactDOM = require('react-dom');
 	var Link = __webpack_require__(178).Link;
 
-	var Home = __webpack_require__(234);
-	var About = __webpack_require__(235);
-	var Projects = __webpack_require__(236);
-	var Contact = __webpack_require__(237);
+	// var Home = require('./components/Home.jsx');
+	// var Contact = require('./components/Contact.jsx');
+	// var Design = require('./components/Design.jsx');
+	// var Logo = require('./components/Logo.jsx');
+	// var Photography = require('./components/Photography.jsx');
+	// var Projects = require('./components/Projects.jsx');
+	// var Resume = require('./components/Resume.jsx');
+	// var Work = require('./components/Work.jsx');
+
 
 	function getActiveClass(path) {
 		var current = window.location.hash.slice(1);
@@ -26449,15 +26464,6 @@
 						"a",
 						{ href: "home.html", "class": "logo-container" },
 						React.createElement("img", { className: "logo", src: "assets/logoweb.png" })
-					),
-					React.createElement(
-						"li",
-						null,
-						React.createElement(
-							"a",
-							{ href: "about.html" },
-							"About"
-						)
 					),
 					React.createElement(
 						"li",
@@ -26515,19 +26521,130 @@
 
 	var React = __webpack_require__(1);
 
-	var About = React.createClass({
-		displayName: 'About',
+	var Contact = React.createClass({
+		displayName: "Contact",
 
 		render: function () {
-			return React.createElement('div', null);
+			return React.createElement(
+				"section",
+				{ "class": "contact" },
+				React.createElement(
+					"p",
+					null,
+					" If you wish to see more of my work, please contact me!",
+					React.createElement(
+						"br",
+						null,
+						"My email is greenkate@me.com"
+					)
+				)
+			);
+		}
+	});
+
+	module.exports = Contact;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Design = React.createClass({
+		displayName: "Design",
+
+		render: function () {
+			return React.createElement(
+				"div",
+				{ className: "contain" },
+				React.createElement("img", { className: "pieces", src: "assets/Design/vogue.png" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/ACL.jpg" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/Beatneverstops.png" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/catsketch.jpeg" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/alicecat.png" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/bundleflowers.png" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/laurensinvite.jpg" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/Teapartyinvite copy.png" }),
+				React.createElement("img", { className: "pieces", src: "assets/Design/rhinobox.png" })
+			);
+		}
+	});
+
+	module.exports = Design;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Logo = React.createClass({
+		displayName: "Logo",
+
+		render: function () {
+			return React.createElement(
+				"div",
+				{ className: "center" },
+				React.createElement("img", { className: "row", src: "assets/Logos/hikesketch.jpg" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/Highlandhikerlogos.png" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/vintage.jpg" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/sign.jpg" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/TShorizontal copy.jpg" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/sortielogo copy.png" }),
+				React.createElement("img", { className: "row", src: "assets/Logos/namelogos.png" })
+			);
+		}
+	});
+
+	module.exports = Logo;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Photography = React.createClass({
+		displayName: "Photography",
+
+		render: function () {
+			return React.createElement(
+				"div",
+				{ className: "gallery" },
+				React.createElement(
+					"figure",
+					{ className: "gallery-item" },
+					React.createElement("img", { className: "thumbnail", src: "assets/Photos/carolweb.jpg" })
+				),
+				React.createElement(
+					"figure",
+					{ className: "gallery-item" },
+					React.createElement("img", { className: "thumbnail", src: "assets/Photos/graveweb.jpg" })
+				),
+				React.createElement(
+					"figure",
+					{ className: "gallery-item" },
+					React.createElement("img", { "class": "thumbnail", src: "assets/Photos/sportsweb.jpg" })
+				),
+				React.createElement(
+					"figure",
+					{ className: "gallery-item" },
+					React.createElement("img", { className: "thumbnail", src: "assets/Photos/corey.jpg" })
+				),
+				React.createElement(
+					"figure",
+					{ className: "gallery-item" },
+					React.createElement("img", { className: "thumbnail", src: "assets/Photos/ashton.jpg" })
+				)
+			);
 		}
 
 	});
 
-	module.exports = About;
+	module.exports = Photography;
 
 /***/ },
-/* 236 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26571,16 +26688,63 @@
 	module.exports = Projects;
 
 /***/ },
-/* 237 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
 
-	var Contact = React.createClass({
-	  displayName: 'Contact'
+	var Resume = React.createClass({
+		displayName: "Resume",
+
+		render: function () {
+			return React.createElement(
+				"section",
+				null,
+				React.createElement("img", { className: "res", src: "assets/Resume.jpg" })
+			);
+		}
 	});
 
-	module.exports = Contact;
+	module.exports = Resume;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Work = React.createClass({
+		displayName: "Work",
+
+		render: function () {
+			return React.createElement(
+				"div",
+				{ id: "box" },
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "photography.html" },
+					React.createElement("img", { "class": "cover", id: "photo-cover", src: "assets/DEAW copy.jpg" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "logo.html" },
+					React.createElement("img", { className: "cover", id: "logo-cover", src: "assets/logoweb.png" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "design.html" },
+					React.createElement("img", { className: "cover", id: "design-cover", src: "assets/eyeprint.png" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "projects.html" },
+					React.createElement("img", { className: "cover", id: "proj-cover", src: "assets/Logos/sortielogo copy.png" })
+				)
+			);
+		}
+	});
+
+	module.exports = Work;
 
 /***/ }
 /******/ ]);

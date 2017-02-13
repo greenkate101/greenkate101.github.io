@@ -9,9 +9,6 @@ var Home = React.createClass({
 						<img className="logo" src="assets/logoweb.png"/>
 					</a>
 				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
 					<a href="work.html">Work</a>
 				</li>
 				<li>
