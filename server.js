@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 
 var app = express();
-var port = 3000;
+var port = 80;
 
 var db = lowdb('db.json', { storage: fileAsync });
 
@@ -23,5 +23,5 @@ app.use(express.static(__dirname + '/lib'));
 
 
 
-app.listen(port);
+app.listen(3000);
 

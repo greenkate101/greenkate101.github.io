@@ -57,13 +57,14 @@
 
 	var App = __webpack_require__(233);
 	var Home = __webpack_require__(234);
-	var Contact = __webpack_require__(235);
-	var Design = __webpack_require__(236);
-	var Logo = __webpack_require__(237);
-	var Photography = __webpack_require__(238);
-	var Projects = __webpack_require__(239);
-	var Resume = __webpack_require__(240);
-	var Work = __webpack_require__(241);
+	var About = __webpack_require__(235);
+	var Contact = __webpack_require__(236);
+	var Design = __webpack_require__(237);
+	var Logo = __webpack_require__(238);
+	var Photography = __webpack_require__(239);
+	var Projects = __webpack_require__(240);
+	var Resume = __webpack_require__(241);
+	var Work = __webpack_require__(242);
 
 	var jsx = React.createElement(
 		Router,
@@ -74,6 +75,7 @@
 			React.createElement(IndexRoute, { component: Home }),
 			'// ',
 			React.createElement(Route, { path: '/resume', component: Resume }),
+			React.createElement(Route, { path: '/about', component: About }),
 			React.createElement(Route, { path: '/work', component: Work }),
 			React.createElement(Route, { path: '/photography', component: Photography }),
 			React.createElement(Route, { path: '/logo', component: Logo }),
@@ -26521,6 +26523,45 @@
 
 	var React = __webpack_require__(1);
 
+	var About = React.createClass({
+		displayName: "About",
+
+		render: function () {
+			return React.createElement(
+				"div",
+				{ id: "box" },
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "photography.html" },
+					React.createElement("img", { "class": "cover", id: "photo-cover", src: "assets/DEAW copy.jpg" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "logo.html" },
+					React.createElement("img", { className: "cover", id: "logo-cover", src: "assets/logoweb.png" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "design.html" },
+					React.createElement("img", { className: "cover", id: "design-cover", src: "assets/eyeprint.png" })
+				),
+				React.createElement(
+					"a",
+					{ className: "proj-link", href: "projects.html" },
+					React.createElement("img", { className: "cover", id: "proj-cover", src: "assets/Logos/sortielogo copy.png" })
+				)
+			);
+		}
+	});
+
+	module.exports = About;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
 	var Contact = React.createClass({
 		displayName: "Contact",
 
@@ -26545,7 +26586,7 @@
 	module.exports = Contact;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26573,7 +26614,7 @@
 	module.exports = Design;
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26599,7 +26640,7 @@
 	module.exports = Logo;
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26644,7 +26685,7 @@
 	module.exports = Photography;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26688,7 +26729,7 @@
 	module.exports = Projects;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26708,7 +26749,7 @@
 	module.exports = Resume;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);

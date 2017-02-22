@@ -11,6 +11,7 @@ var hashHistory = ReactRouter.hashHistory;
 
 var App = require('./components/App.jsx');
 var Home = require('./components/Home.jsx');
+var About = require('./components/About.jsx');
 var Contact = require('./components/Contact.jsx');
 var Design = require('./components/Design.jsx');
 var Logo = require('./components/Logo.jsx');
@@ -25,6 +26,7 @@ var jsx = (
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}/>
 			// <Route path="/resume" component={Resume}/>
+			<Route path="/about" component={About}/>
 			<Route path="/work" component={Work}/>
 				<Route path="/photography" component={Photography}/>
 				<Route path="/logo" component={Logo}/>

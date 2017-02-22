@@ -1,31 +1,39 @@
-
+#box{
+	margin-left: 18px;
+}
 #box img {
 	height: 400px;
 	width: 465px;
 	float: left;
-	margin-left: 50px;
 }
 #photo-cover {
 		margin: auto 0;
 	}
 
-@media screen and (min-width: 396px) {
+@media screen and (min-width: 760px) {
 	#box {
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 	#box img {
-		// width: 150px;
+		width: 200px;
 		// height: 150px;
 		margin-left: 0px;
 		}
 }
 @media screen and (min-width: 950px) {
-	#box div { 
-		margin-left: 40px;
+	#box { 
+		margin-left: 190px;
 	}
 	#box img {
 		width: 40%;
 		height: 480px;
 		margin: 33px;
+	}
+	.html{
+		padding-top: 20px;
+	}
+	.skill-img {
+		width: 800px;
+		padding-left: 60px;
 	}
 }

@@ -1,8 +1,15 @@
 .sort {
-	margin-left: 25px;
 	font-family: $raleway;
+	color: $charcoal;
+	text-align: center;
 	.par {
 		margin-left: 25px;
+	}
+	.link {
+		text-decoration: none;
+		color: $gold;
+	font-weight: bold;
+	text-align: center;
 	}
 }
 .contain {
@@ -27,6 +34,10 @@
 	}
 
 @media screen and (min-width: 768px) {
+	.par {
+		color: $charcoal;
+		margin-left: 0px;
+	}
 	.proj {
 		width: 500px;
 		height: 300px;

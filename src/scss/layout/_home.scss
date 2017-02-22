@@ -9,10 +9,14 @@
 		font-family: $raleway; 
 	}
 	#name {
-		font-family: $dawning;
-		font-size: 40px;	
+		font-family: $soon;
+		font-size: 80px;	
 		z-index: 999999;
 		color: #fff;
+	}
+	#subtitle {
+		font-family: $soon;
+		text-align: left;
 	}
 }
 .bulb-contain {
@@ -26,39 +30,110 @@
 	}
 }
 .about {
-	background-color: $red;
-	overflow: auto;
+	background-color: $blue;
+	// overflow: hidden;
 	height: 340px;
 	text-align: center;
+	float: left;
+	font-family: $raleway;
+	.story {
+		color: #fff;
+		font-family: $raleway;
+		// padding-top: 30px;
+	}
+		p {
+			color: #fff;
+			font-family: $raleway;
+			// padding-right: 300px;
+			// padding-left: 300px;
+			
+		}
+		.resume {
+			text-decoration: none;
+			color: $gold;
+			font-weight: bold;
+		}
+	}
+	
+	
+
+h2 {
+	text-align: center;
+	font-family: $raleway;
+}
+.dots {
+	text-align: center;
+	font-family: $raleway;
+		.label{
+			list-style-type: circle; 
+			display: inline-block;
+			padding-right:5px;
+		}
+		.label:before {
+			content: "•";
+			padding-right: 8px;
+		}
+		#lab {
+			display: inline-block;
+			text-decoration: none;
+			list-style-type: none;
+		}
+}
+
+.skills {	
+	width: 100%;
+	height: 500px;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+	// .html{
+	// 	float: left;
+	// 	text-align: center;
+	// // 	// padding-left: 620px;
+	// }
+		.skill-img {
+		// height: 500px;
+		width: 80%;
+		// margin-top: 50px;
+	}
+	
+
+}
+@media screen and (min-width: 385px) {
+	
+.about {
+	background-color: $blue;
+	height: 340px;
+	text-align: center;
+	float: left;
+	font-family: $raleway;
 	.story {
 		color: #fff;
 		font-family: $raleway;
 		padding-top: 70px;
 	}
-	p {
-		color: #fff;
-		font-family: $raleway;
-		padding-right: 40px;
-		padding-left: 40px;
+		p {
+			color: #fff;
+			font-family: $raleway;
+			padding-right: 50px;
+			padding-left: 50px;
+			overflow: auto;
+			
+		}
 	}
-	.resume {
-		text-decoration: none;
-		color: $biege;
-	}
-}
 
-@media screen and (min-width: 768px) {
 	.bulb-contain{
 		height: 400px;
 		overflow: auto;
 		.bulb {
 			height: 450px;
 			width: 110%;
+			text-align: center;
 		}
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
 	h1 {
 		font-size: 50px;
 
@@ -73,5 +148,18 @@
 			height: 450px;
 			width: 110%;
 		}
+	}
+	p {
+			color: #fff;
+			font-family: $raleway;
+			padding-right: 400px;
+			padding-left: 400px;
+			
+		}
+	.skill-img {
+		// height: 400px;
+		// float: left;
+		// width: 400px;
+		// margin-top: 20px;
 	}
 }
